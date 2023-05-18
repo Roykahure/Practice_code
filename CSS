@@ -1,0 +1,35 @@
+  background-repeat: no-repeat;
+  box-shadow: .25em .25em .25em #8d889e,
+  inset .0625em .0625em .25em #d1d1d6,
+  inset -.0625em -.0625em .25em #8c869e;
+  transition: transform .4s,
+  box-shadow .4s;
+
+  &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      background-position: -.25em -.25em;
+      background-size: auto, calc(100% + .25em) calc(100% + .25em);
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity .4s;
+
+      .toggle-wrapper.red>.toggle-container>& {
+          background-image:
+              radial-gradient(rgba(#fff, .6), rgba(#fff, 0) 16%),
+              radial-gradient(#ff2751, #e0022f);
+          box-shadow:
+              .25em .25em .25em #b70033,
+              inset .0625em .0625em .25em #fe7d7e,
+              inset -.0625em -.0625em .25em #870002;
+      }
+
+      .toggle-wrapper.yellow>.toggle-container>& {
+          background-image:
+              radial-gradient(rgba(#fff, .6), rgba(#fff, 0) 16%),
+              radial-gradient(#f5d05f, #d67f1b);
