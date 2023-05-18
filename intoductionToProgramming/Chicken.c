@@ -6,6 +6,7 @@ void show()
     printf("Enter first number\n");
     scanf("%f", &num1);
     printf("Enter Second number\n");
+
     scanf("%f", &num2);
     sum = num1 + num2;
 
