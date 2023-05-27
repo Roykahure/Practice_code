@@ -9,6 +9,10 @@
     <button id="red">Red Background </button>
     <button id="green">Green Background </button>
     <button id="blue">Blue Background </button>
+    <button id="Olive">Olive Background </button>
+    <button id="Yellow">Yellow Background </button>
+    <button id="Navy">Navy Background </button>
+
     <script>
         let body = document.querySelector('body');
         document.querySelector('#red').addEventListener('click', function () {
@@ -19,6 +23,15 @@
         });
         document.querySelector('#blue').addEventListener('click', function () {
             body.style.backgroundColor = 'blue';
+        });
+        document.querySelector('#Olive').addEventListener('click', function () {
+            body.style.backgroundColor = '#808000';
+        });
+        document.querySelector('#Yellow').addEventListener('click', function () {
+            body.style.backgroundColor = '#FFFF00';
+        });
+        document.querySelector('#Navy').addEventListener('click', function () {
+            body.style.backgroundColor = '#000080';
         });
 
 
